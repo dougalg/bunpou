@@ -4,3 +4,21 @@ v0.1
 WARNING: This is not a stable version and is not currently intended for production use.
 
 This is a a morphological segmenter to be used with Xerox's XFST Finite-State tool (fsmbook.com). It can be incorporated into c/c++/obj-c programs with their XCFSM library or into python apps using the python library. Please see their website for more information.
+
+The Converter directory contains an FST for converter between hiragana/romaji.
+
+Installation:
+
+The FSTs should be usable as-is with XFST or any of the APIs available on the fsmbook.com website.
+
+If you need to compile from source, the included makefile can be used. Assuming you have XFST and LEXC installed, you need only run "make full.fst" to compile all three FSTs.
+
+Usage Notes:
+
+1) Romaji input/output:
+
+The romaji output by the converter, and to be input into the converter and the full and lexical FSTs should be of the Kunrei Shiki Romaji system (http://en.wikipedia.org/wiki/Kunrei-shiki_Rōmaji). This is to make the application of morpho-phonological rules easier.
+
+2) Kanji input/output
+
+You should be able to input pure romaji, or kanji and romaji into the full.fst and receive equal results, although words containing more than one kanji character must have all their kanji characters included
