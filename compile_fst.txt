@@ -1,0 +1,12 @@
+xfst<<!
+source rules/0_definitions.txt
+source rules/1_adjectives.txt
+source rules/2_verbs.txt
+source rules/98_filters.txt
+source rules/99_cleanup.txt
+turn stack
+compose net
+save rules.fst
+load lex.fst
+compose net
+save full.fst

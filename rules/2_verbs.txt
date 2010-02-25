@@ -1,0 +1,27 @@
+# Consonent lengthening before ta and te of /r/ and /t/
+define rule [ [ r %+ i | t %+ i ] -> t || _ %+ t ]; # This needs to get converted to small tsu outside of XFST
+push rule;
+
+# Consonant lengthening after a V before t
+define rule [ %+ i -> t || V _ %+ t ]; # This needs to get converted to small tsu outside of XFST
+push rule;
+
+# b and m -> n in the past and te form
+define rule [ [ b %+ i | m %+ i | n %+ i ] -> n || _ %+ t ];
+push rule;
+
+# For dealing with t -> d after /g/ and /n/
+define rule [ t -> d || [ g %+ i | n | b %+ i ] %+ _ ];
+push rule;
+
+# Next g->0 before d
+define rule [ g -> 0 || _ %+ i %+ d ];
+push rule;
+
+# Next k->0 before t
+define rule [ k -> 0 || _ %+ i %+ t ];
+push rule;
+
+# For negatives with V stems
+define rule [ [..] -> w || V _ %+ a ];
+push rule;

@@ -1,0 +1,7 @@
+# Gozaimasu forms
+define gStem3 [ i %+ GSTEM -> y u %+ u ];
+define gStem2 [ [ a | o ] %+ GSTEM -> o %+ u ];
+define gStem1 [ GSTEM -> u ];
+push gStem3;
+push gStem2;
+push gStem1;

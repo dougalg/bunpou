@@ -1,0 +1,54 @@
+
+LEXICON							allVerbs
+v5%&:0								goDanVerbs ;
+v1%&:0								ichiDanVerbs ;
+vs%&:0									suruVerbs ;
+v%&:0									irregularVerbs ;
+									
+LEXICON							irregularVerbs
+									kuru ;
+									suru ;
+									copula ;
+
+LEXICON							copula
+copula+PLAIN:da						# ;
+copula+VOL:darou					# ;
+copula+COND:de%!areba				# ;
+copula+IMP:de%!are					# ;
+copula+PAST+ALT:dattari			# ;
+copula+PAST+ALT:dattari			# ;
+									
+LEXICON							suru
+suru+PLAIN:suru						# ;
+suru+COND:sureba					# ;
+suru:si								suruSiEndings ;
+suru+POT:deki						realVerbIchiDanEndings ;
+suru+IMP:si+ro						# ;
+suru+IMP+NEG:suru+na				# ;
+suru+CAUS:sase						realVerbIchiDanEndings ;
+suru+VOL+NEG:suru+mai				# ;
+
+LEXICON							suruSiEndings
+									masu ;
++PAST:ta							# ;
++TE:te								teEndings ;
++NEG:+na							naiEndings ;
++VOL:+you							# ;
+
+LEXICON							kuru
+kuru+PLAIN:kuru					# ;
+kuru+COND:sureba					# ;
+kuru:ki								kuruKiEndings ;
+kuru+NEG:ko+na						naiEndings ;
+kuru+POT:ko+re						realVerbIchiDanEndings ;
+kuru+IMP:koi						# ;
+kuru+IMP+NEG:kuru+na				# ;
+kuru+CAUS:kosase					realVerbIchiDanEndings ;
+kuru+VOL:ku+you					# ;
+kuru+VOL+NEG:ku+mai				# ;
+
+LEXICON							kuruKiEndings
+									masu ;
++PAST:ta							# ;
++TE:te								teEndings ;
+

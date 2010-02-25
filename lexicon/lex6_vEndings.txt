@@ -1,0 +1,101 @@
+
+LEXICON 				verbIchiDanEndings
+ru:0						realVerbIchiDanEndings ;
+
+LEXICON				realVerbIchiDanEndings
+							verbContEndings ;
+							verbImpfEndings ;
+0:+ra						passive ;
+0:+sa						causative ;
+0:+re						verbHypEndings ;
++PLAIN:+ru					# ;
++IMP:+ro					# ;
++IMP:+yo					# ;
++IMP+NEG:+ru+na			# ;
++VOL:+you					# ;
++VOL+NEG:+mai				# ;
+
+LEXICON				verbGoDanEndings
+u:0							realVerbGoDanEndings ;
+
+LEXICON				realVerbGoDanEndings
+0:+i							verbContEndings ;
+0:+a							verbImpfEndings ;
+0:+a							passive ;
+0:+a							causative ;
+0:+e							verbHypEndings ;
++PLAIN:+u					# ;
++IMP:+e						# ;
++IMP+NEG:+u+na				# ;
++VOL:+ou					# ;
++VOL+NEG:+u+mai			# ;
+
+LEXICON				verbContEndings
+							masu ;
++TAI:%!ta					realIAdjEndings ;	! tai conjugates as an i adjective
++PAST:+ta					pastEndings ;
++TE:+te						teEndings ;
++CHAU:%!tya				realVerbGoDanEndings ;
++NOWAY:%!ha%!sina			naiEndings ; ! From here are special endings...
++IMP+POLITE:%!nasai		# ;
++IMP+POLITE+NEG:%!nasaruna	# ;
++EASY:%!易					realIAdjEndings ;
++EASY:%!yasu				realIAdjEndings ;
++HARD:%!難					realIAdjEndings ;
++SUGIRU:+sugi				realVerbIchiDanEndings ;
++SUGIRU:+過gi				realVerbIchiDanEndings ;
+
+LEXICON				masu
++POLITE:+mas				masEndings ;
+
+LEXICON				masEndings
+0:+u							# ;
++PAST:+i+ta					pastEndings ;
++NEG:+en					# ;
++NEG+PAST:+en%!desita		# ;
+0:+e							verbHypEndings ;
+0:+sure						verbHypEndings ;
++VOL:+you					# ;
+
+LEXICON				verbImpfEndings
++ZU:+zu						# ; ! Translates to "without"
++NEG:%!na					naiEndings ;	! nai conjugates as an i adjective.
++MUST:%!nakereba%!narimasen	# ;
++MUST:%!nakya				# ;
++MUST:%!nakutya			# ;
++VOL:+u						# ;
+
+! Here we allow passive to follow causative, but not passive+passive
+! We also deny CAUS/PASS+POT,  but allow POT+caus/pass
+LEXICON				passive
+@U.Mood.CAUS@@P.Mood.PASSCAUS@+PASS:@U.Mood.CAUS@@P.Mood.PASSCAUS@+re			realVerbIchiDanEndings ;
+@D.Mood@+POT:@D.Mood@+re											realVerbIchiDanEndings ;
+
+!Here we deny causative +CAUS/PASS/POT
+LEXICON				causative
+@D.Mood@@U.Mood.CAUS@+CAUS:@D.Mood@@U.Mood.CAUS@+se					realVerbIchiDanEndings ;
+@D.Mood@@U.Mood.CAUS@+CAUS:@D.Mood@@U.Mood.CAUS@+s					realVerbGoDanEndings ;
+
+! Here we deny caus/pass+POT but allow POT+caus/pass
+LEXICON				verbHypEndings
+								masu ;
+@D.Mood@+POT:@D.Mood@						realVerbIchiDanEndings ;
++COND:+ba					# ;
+
+LEXICON			pastEndings
+						# ;
++VOL:+rou				# ;
++PROV:+ra				# ;
++ALT:+ri				# ;
+
+LEXICON			teEndings
++IRU:%!i				realVerbIchiDanEndings ;
++IRU:%!					realVerbIchiDanEndings ;
++IRU:%!居				realVerbIchiDanEndings ;
++SHIMAU:%!仕舞		realVerbGoDanEndings ;
++SHIMAU:%!終			realVerbGoDanEndings ;
++SHIMAU:%!了			realVerbGoDanEndings ;
++SHIMAU:%!sima		realVerbGoDanEndings ;
++TRY:%!mi				realVerbIchiDanEndings ;
++TRY:%!見				realVerbIchiDanEndings ;
+						# ;

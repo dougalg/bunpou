@@ -1,0 +1,7 @@
+# Remove morpheme boundaries...
+define rule [ %+ -> 0 ];
+push rule;
+
+# Remove word boundaries...
+define rule [ %! -> 0 ];
+push rule;

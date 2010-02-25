@@ -1,0 +1,4 @@
+lexc<<!
+compile-source full_lex.txt
+save-source lex.fst
+quit
