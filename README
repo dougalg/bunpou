@@ -1,0 +1,6 @@
+Bunpou Morphological Segmenter for Japan
+v0.1
+
+WARNING: This is not a stable version and is not currently intended for production use.
+
+This is a a morphological segmenter to be used with Xerox's XFST Finite-State tool (fsmbook.com). It can be incorporated into c/c++/obj-c programs with their XCFSM library or into python apps using the python library. Please see their website for more information.
