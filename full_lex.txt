@@ -1,9 +1,43 @@
-Multichar_Symbols adj-i adj-na adj-t GSTEM @D.Mood@ @U.Mood.CAUS@ @U.Mood.CAUS@ @P.Mood.PASSCAUS@
+! Copyright 2009, 2010 Dougal Graham
+!
+! This file is part of Bunpou v0.1.
+!
+! Bunpou is free software: you can redistribute it and/or modify
+! it under the terms of the GNU General Public License as published by
+! the Free Software Foundation, either version 3 of the License, or
+! (at your option) any later version.
+!
+! Bunpou is distributed in the hope that it will be useful,
+! but WITHOUT ANY WARRANTY; without even the implied warranty of
+! MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+! GNU General Public License for more details.
+!
+! You should have received a copy of the GNU General Public License
+! along with Bunpou.  If not, see <http://www.gnu.org/licenses/>.
+
+Multichar_Symbols adj-i adj-na adj-t v5 v1 vs GSTEM @D.Mood@ @U.Mood.CAUS@ @U.Mood.CAUS@ @P.Mood.PASSCAUS@
 
 LEXICON							ROOT
 										allAdjectives;
 										allVerbs;
 										
+
+! Copyright 2009, 2010 Dougal Graham
+!
+! This file is part of Bunpou v0.1.
+!
+! Bunpou is free software: you can redistribute it and/or modify
+! it under the terms of the GNU General Public License as published by
+! the Free Software Foundation, either version 3 of the License, or
+! (at your option) any later version.
+!
+! Bunpou is distributed in the hope that it will be useful,
+! but WITHOUT ANY WARRANTY; without even the implied warranty of
+! MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+! GNU General Public License for more details.
+!
+! You should have received a copy of the GNU General Public License
+! along with Bunpou.  If not, see <http://www.gnu.org/licenses/>.
 
 LEXICON						allAdjectives
 adj-na%&:0							naAdj;
@@ -13363,6 +13397,22 @@ LEXICON			presPastNegAdj
 							
 LEXICON			presPastAdj
 +PAST:+katta			pastEndings ;
+! Copyright 2009, 2010 Dougal Graham
+!
+! This file is part of Bunpou v0.1.
+!
+! Bunpou is free software: you can redistribute it and/or modify
+! it under the terms of the GNU General Public License as published by
+! the Free Software Foundation, either version 3 of the License, or
+! (at your option) any later version.
+!
+! Bunpou is distributed in the hope that it will be useful,
+! but WITHOUT ANY WARRANTY; without even the implied warranty of
+! MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+! GNU General Public License for more details.
+!
+! You should have received a copy of the GNU General Public License
+! along with Bunpou.  If not, see <http://www.gnu.org/licenses/>.
 
 LEXICON							allVerbs
 v5%&:0								goDanVerbs ;
@@ -13380,7 +13430,6 @@ copula+PLAIN:da						# ;
 copula+VOL:darou					# ;
 copula+COND:de%!areba				# ;
 copula+IMP:de%!are					# ;
-copula+PAST+ALT:dattari			# ;
 copula+PAST+ALT:dattari			# ;
 									
 LEXICON							suru
@@ -13417,6 +13466,22 @@ LEXICON							kuruKiEndings
 +PAST:ta							# ;
 +TE:te								teEndings ;
 
+! Copyright 2009, 2010 Dougal Graham
+!
+! This file is part of Bunpou v0.1.
+!
+! Bunpou is free software: you can redistribute it and/or modify
+! it under the terms of the GNU General Public License as published by
+! the Free Software Foundation, either version 3 of the License, or
+! (at your option) any later version.
+!
+! Bunpou is distributed in the hope that it will be useful,
+! but WITHOUT ANY WARRANTY; without even the implied warranty of
+! MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+! GNU General Public License for more details.
+!
+! You should have received a copy of the GNU General Public License
+! along with Bunpou.  If not, see <http://www.gnu.org/licenses/>.
 
 LEXICON							goDanVerbs
 agetura			verbGoDanEndings ;
@@ -24590,6 +24655,22 @@ tukamar			verbGoDanEndings ;
 摑mar			verbGoDanEndings ;
 mogir			verbGoDanEndings ;
 捥r			verbGoDanEndings ;
+! Copyright 2009, 2010 Dougal Graham
+!
+! This file is part of Bunpou v0.1.
+!
+! Bunpou is free software: you can redistribute it and/or modify
+! it under the terms of the GNU General Public License as published by
+! the Free Software Foundation, either version 3 of the License, or
+! (at your option) any later version.
+!
+! Bunpou is distributed in the hope that it will be useful,
+! but WITHOUT ANY WARRANTY; without even the implied warranty of
+! MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+! GNU General Public License for more details.
+!
+! You should have received a copy of the GNU General Public License
+! along with Bunpou.  If not, see <http://www.gnu.org/licenses/>.
 
 LEXICON							ichiDanVerbs
 abure									verbIchiDanEndings ;
@@ -30124,6 +30205,22 @@ osimake									verbIchiDanEndings ;
 押si負ke									verbIchiDanEndings ;
 hiware									verbIchiDanEndings ;
 干割re									verbIchiDanEndings ;
+! Copyright 2009, 2010 Dougal Graham
+!
+! This file is part of Bunpou v0.1.
+!
+! Bunpou is free software: you can redistribute it and/or modify
+! it under the terms of the GNU General Public License as published by
+! the Free Software Foundation, either version 3 of the License, or
+! (at your option) any later version.
+!
+! Bunpou is distributed in the hope that it will be useful,
+! but WITHOUT ANY WARRANTY; without even the implied warranty of
+! MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+! GNU General Public License for more details.
+!
+! You should have received a copy of the GNU General Public License
+! along with Bunpou.  If not, see <http://www.gnu.org/licenses/>.
 
 LEXICON				suruVerbs
 assari+					suru ;
@@ -52948,6 +53045,22 @@ sogo+					suru ;
 鉏鋙+					suru ;
 kitou+					suru ;
 祈禱+					suru ;
+! Copyright 2009, 2010 Dougal Graham
+!
+! This file is part of Bunpou v0.1.
+!
+! Bunpou is free software: you can redistribute it and/or modify
+! it under the terms of the GNU General Public License as published by
+! the Free Software Foundation, either version 3 of the License, or
+! (at your option) any later version.
+!
+! Bunpou is distributed in the hope that it will be useful,
+! but WITHOUT ANY WARRANTY; without even the implied warranty of
+! MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+! GNU General Public License for more details.
+!
+! You should have received a copy of the GNU General Public License
+! along with Bunpou.  If not, see <http://www.gnu.org/licenses/>.
 
 LEXICON 				verbIchiDanEndings
 ru:0						realVerbIchiDanEndings ;
