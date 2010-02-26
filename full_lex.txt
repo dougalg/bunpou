@@ -13455,6 +13455,7 @@ kuru+COND:sureba					# ;
 kuru:ki								kuruKiEndings ;
 kuru+NEG:ko+na						naiEndings ;
 kuru+POT:ko+re						realVerbIchiDanEndings ;
+kuru+PASS@P.Mood.PASSCAUS@:ko+ra@P.Mood.PASSCAUS@					realVerbIchiDanEndings ;
 kuru+IMP:koi						# ;
 kuru+IMP+NEG:kuru+na				# ;
 kuru+CAUS:kosase					realVerbIchiDanEndings ;

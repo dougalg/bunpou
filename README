@@ -1,5 +1,5 @@
 Bunpou Morphological Segmenter for Japan
-v0.1
+v0.1.1
 
 WARNING: This is not a stable version and is not currently intended for production use.
 
@@ -24,3 +24,10 @@ The romaji output by the converter, and to be input into the converter and the f
 2) Kanji input/output
 
 You should be able to input pure romaji, or kanji and romaji into the full.fst and receive equal results, although words containing more than one kanji character must have all their kanji characters included
+
+UPDATES:
+
+2010/02/26
+- Added korareru and conjugations to irregular verb lexicon
+- Fixed problems with kr_converter.fst where it would convert しゃ to siゃ rather than to sya
+- Fixed the inverse issues with rk_converter.fst

@@ -16,234 +16,119 @@
 # along with Bunpou.  If not, see <http://www.gnu.org/licenses/>.
 
 # Convert all hiragana to romaji
-define rule [ っ t -> t t ];
-push rule
-define rule [ っ d -> d d ];
-push rule
-define rule [ っ k -> k k ];
-push rule
-define rule [ っ g -> g g ];
-push rule
-define rule [ っ y -> y y ];
-push rule
-define rule [ っ n -> n n ];
-push rule
-define rule [ っ h -> h h ];
-push rule
-define rule [ っ p -> p p ];
-push rule
-define rule [ っ b -> b b ];
-push rule
-define rule [ っ r -> r r ];
-push rule
-define rule [ っ s -> s s ];
-push rule
-define rule [ っ z -> z z ];
-push rule
-define rule [ っ m -> m m ];
-push rule
-define rule [ っ w -> w w ];
-push rule
-define rule [ し ゃ -> s y a ];
-push rule
-define rule [ し ゅ -> s y u ];
-push rule
-define rule [ し ょ -> s y o ];
-push rule
-define rule [ じ ゃ -> z y a ];
-push rule
-define rule [ じ ゅ -> z y u ];
-push rule
-define rule [ じ ょ -> z y o ];
-push rule
-define rule [ ち ゃ -> t y a ];
-push rule
-define rule [ ち ゅ -> t y u ];
-push rule
-define rule [ ち ょ -> t y o ];
-push rule
-define rule [ に ゃ -> n y a ];
-push rule
-define rule [ に ゅ -> n y u ];
-push rule
-define rule [ に ょ -> n y o ];
-push rule
-define rule [ ひ ゃ -> h y a ];             
-push rule                                                                                                                        
-define rule [ ひ ゅ -> h y u ];
-push rule
-define rule [ ひ ょ -> h y o ];
-push rule
-define rule [ び ゃ -> b y a ];
-push rule
-define rule [ び ゅ -> b y u ];
-push rule
-define rule [ び ょ -> b y o ];
-push rule
-define rule [ ぴ ゃ -> p y a ];
-push rule
-define rule [ ぴ ゅ -> p y u ];
-push rule
-define rule [ ぴ ょ -> p y o ];
-push rule
-define rule [ み ゃ -> m y a ];
-push rule
-define rule [ み ゅ -> m y u ];
-push rule
-define rule [ み ょ -> m y o ];
-push rule
-define rule [ り ゃ -> r y a ];
-push rule
-define rule [ り ゅ -> r y u ];
-push rule
-define rule [ り ょ -> r y o ];
-push rule
-define rule [ き ゃ -> k y a ];
-push rule
-define rule [ き ゅ -> k y u ];
-push rule
-define rule [ き ょ -> k y o ];
-push rule
-define rule [ ぎ ゃ -> g y a ];
-push rule
-define rule [ ぎ ゅ -> g y u ];
-push rule
-define rule [ ぎ ょ -> g y o ];
-push rule
-define rule [ か -> k a ];
-push rule
-define rule [ が -> g a ];
-push rule
-define rule [ き -> k i ];
-push rule
-define rule [ ぎ -> g i ];
-push rule
-define rule [ く -> k u ];
-push rule
-define rule [ ぐ -> g u ];
-push rule
-define rule [ け -> k e ];
-push rule
-define rule [ げ -> g e ];
-push rule
-define rule [ こ -> k o ];
-push rule
-define rule [ ご -> g o ];
-push rule
-define rule [ さ -> s a ];
-push rule
-define rule [ ざ -> z a ];
-push rule
-define rule [ し -> s i ];
-push rule
-define rule [ じ -> z i ];
-push rule
-define rule [ す -> s u ];
-push rule
-define rule [ ず -> z u ];
-push rule
-define rule [ せ -> s e ];
-push rule
-define rule [ ぜ -> z e ];
-push rule
-define rule [ そ -> s o ];
-push rule
-define rule [ ぞ -> z o ];
-push rule
-define rule [ た -> t a ];
-push rule
-define rule [ だ -> d a ];
-push rule
-define rule [ ち -> t i ];
-push rule
-define rule [ つ -> t u ];
-push rule
-define rule [ て -> t e ];
-push rule
-define rule [ で -> d e ];
-push rule
-define rule [ と -> t o ];
-push rule
-define rule [ ど -> d o ];
-push rule
-define rule [ な -> n a ];
-push rule
-define rule [ に -> n i ];
-push rule
-define rule [ ぬ -> n u ];
-push rule
-define rule [ ね -> n e ];
-push rule
-define rule [ の -> n o ];
-push rule
-define rule [ は -> h a ];
-push rule
-define rule [ ば -> b a ];
-push rule
-define rule [ ぱ -> p a ];
-push rule
-define rule [ ひ -> h i ];
-push rule
-define rule [ び -> b i ];
-push rule
-define rule [ ぴ -> p i ];
-push rule
-define rule [ ふ -> h u ];
-push rule
-define rule [ ぶ -> b u ];
-push rule
-define rule [ ぷ -> p u ];
-push rule
-define rule [ へ -> h e ];
-push rule
-define rule [ べ -> b e ];
-push rule
-define rule [ ぺ -> p e ];
-push rule
-define rule [ ほ -> h o ];
-push rule
-define rule [ ぼ -> b o ];
-push rule
-define rule [ ぽ -> p o ];
-push rule
-define rule [ ま -> m a ];
-push rule
-define rule [ み -> m i ];
-push rule
-define rule [ む -> m u ];
-push rule
-define rule [ め -> m e ];
-push rule
-define rule [ も -> m o ];
-push rule
-define rule [ や -> y a ];
-push rule
-define rule [ ゆ -> y u ];
-push rule
-define rule [ よ -> y o ];
-push rule
-define rule [ ら -> r a ];
-push rule
-define rule [ り -> r i ];
-push rule
-define rule [ る -> r u ];
-push rule
-define rule [ れ -> r e ];
-push rule
-define rule [ ろ -> r o ];
-push rule
-define rule [ わ -> w a ];
-push rule
-define rule [ ん -> n ];
-push rule
-define rule [ あ -> a ];
-push rule
-define rule [ い -> i ];
-push rule
-define rule [ う -> u ];
-push rule
-define rule [ え ->  e ];
-push rule
-define rule [ お -> o ];
-push rule
+read regex [ っ t -> t t ];
+read regex [ っ d -> d d ];
+read regex [ っ k -> k k ];
+read regex [ っ g -> g g ];
+read regex [ っ y -> y y ];
+read regex [ っ n -> n n ];
+read regex [ っ h -> h h ];
+read regex [ っ p -> p p ];
+read regex [ っ b -> b b ];
+read regex [ っ r -> r r ];
+read regex [ っ s -> s s ];
+read regex [ っ z -> z z ];
+read regex [ っ m -> m m ];
+read regex [ っ w -> w w ];
+read regex [ しゃ -> s y a ];
+read regex [ しゅ -> s y u ];
+read regex [ しょ -> s y o ];
+read regex [ じゃ -> z y a ];
+read regex [ じゅ -> z y u ];
+read regex [ じょ -> z y o ];
+read regex [ ちゃ -> t y a ];
+read regex [ ちゅ -> t y u ];
+read regex [ ちょ -> t y o ];
+read regex [ にゃ -> n y a ];
+read regex [ にゅ -> n y u ];
+read regex [ にょ -> n y o ];
+read regex [ ひゃ -> h y a ];                                                                                                                                     
+read regex [ ひゅ -> h y u ];
+read regex [ ひょ -> h y o ];
+read regex [ びゃ -> b y a ];
+read regex [ びゅ -> b y u ];
+read regex [ びょ -> b y o ];
+read regex [ ぴゃ -> p y a ];
+read regex [ ぴゅ -> p y u ];
+read regex [ ぴょ -> p y o ];
+read regex [ みゃ -> m y a ];
+read regex [ みゅ -> m y u ];
+read regex [ みょ -> m y o ];
+read regex [ りゃ -> r y a ];
+read regex [ りゅ -> r y u ];
+read regex [ りょ -> r y o ];
+read regex [ きゃ -> k y a ];
+read regex [ きゅ -> k y u ];
+read regex [ きょ -> k y o ];
+read regex [ ぎゃ -> g y a ];
+read regex [ ぎゅ -> g y u ];
+read regex [ ぎょ -> g y o ];
+read regex [ か -> k a ];
+read regex [ が -> g a ];
+read regex [ き -> k i ];
+read regex [ ぎ -> g i ];
+read regex [ く -> k u ];
+read regex [ ぐ -> g u ];
+read regex [ け -> k e ];
+read regex [ げ -> g e ];
+read regex [ こ -> k o ];
+read regex [ ご -> g o ];
+read regex [ さ -> s a ];
+read regex [ ざ -> z a ];
+read regex [ し -> s i ];
+read regex [ じ -> z i ];
+read regex [ す -> s u ];
+read regex [ ず -> z u ];
+read regex [ せ -> s e ];
+read regex [ ぜ -> z e ];
+read regex [ そ -> s o ];
+read regex [ ぞ -> z o ];
+read regex [ た -> t a ];
+read regex [ だ -> d a ];
+read regex [ ち -> t i ];
+read regex [ つ -> t u ];
+read regex [ て -> t e ];
+read regex [ で -> d e ];
+read regex [ と -> t o ];
+read regex [ ど -> d o ];
+read regex [ な -> n a ];
+read regex [ に -> n i ];
+read regex [ ぬ -> n u ];
+read regex [ ね -> n e ];
+read regex [ の -> n o ];
+read regex [ は -> h a ];
+read regex [ ば -> b a ];
+read regex [ ぱ -> p a ];
+read regex [ ひ -> h i ];
+read regex [ び -> b i ];
+read regex [ ぴ -> p i ];
+read regex [ ふ -> h u ];
+read regex [ ぶ -> b u ];
+read regex [ ぷ -> p u ];
+read regex [ へ -> h e ];
+read regex [ べ -> b e ];
+read regex [ ぺ -> p e ];
+read regex [ ほ -> h o ];
+read regex [ ぼ -> b o ];
+read regex [ ぽ -> p o ];
+read regex [ ま -> m a ];
+read regex [ み -> m i ];
+read regex [ む -> m u ];
+read regex [ め -> m e ];
+read regex [ も -> m o ];
+read regex [ や -> y a ];
+read regex [ ゆ -> y u ];
+read regex [ よ -> y o ];
+read regex [ ら -> r a ];
+read regex [ り -> r i ];
+read regex [ る -> r u ];
+read regex [ れ -> r e ];
+read regex [ ろ -> r o ];
+read regex [ わ -> w a ];
+read regex [ ん -> n ];
+read regex [ あ -> a ];
+read regex [ い -> i ];
+read regex [ う -> u ];
+read regex [ え ->  e ];
+read regex [ お -> o ];
 compose net
