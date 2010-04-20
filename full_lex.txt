@@ -13459,12 +13459,19 @@ kuru+PASS@P.Mood.PASSCAUS@:ko+ra@P.Mood.PASSCAUS@					realVerbIchiDanEndings ;
 kuru+IMP:koi						# ;
 kuru+IMP+NEG:kuru+na				# ;
 kuru+CAUS:kosase					realVerbIchiDanEndings ;
-kuru+VOL:ku+you					# ;
+kuru+VOL:ko+you					# ;
 kuru+VOL+NEG:ku+mai				# ;
+kuru+VOL:kuru%!darou				# ;
+kuru+PAST+VOL:kita%!darou				# ;
+kuru+PAST+POLITE+VOL:kita%!desyou				# ;
+kuru+NEG+VOL:ko+nai%!darou		# ;
+kuru+POLITE+VOL:kuru%!desyou				# ;
+kuru+NEG+POLITE+VOL:ko+nai%!desyou		# ;
 
 LEXICON							kuruKiEndings
 									masu ;
 +PAST:ta							# ;
++PAST+VOL:tarou					# ;
 +TE:te								teEndings ;
 
 ! Copyright 2009, 2010 Dougal Graham
