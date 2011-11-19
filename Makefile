@@ -9,3 +9,7 @@ lex.fst: full_lex.txt compile_lex.txt
 
 full.fst: lex.fst compile_fst.txt rules/1_adjectives.txt rules/2_verbs.txt rules/98_filters.txt rules/99_cleanup.txt
 	bash<<!source compile_fst.txt
+
+full_unclean.fst: lex.fst compile_fst_unclean.txt rules/1_adjectives.txt rules/2_verbs.txt
+	bash<<!source compile_fst_unclean.txt
+

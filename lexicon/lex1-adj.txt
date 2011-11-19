@@ -1,20 +1,3 @@
-! Copyright 2009, 2010 Dougal Graham
-!
-! This file is part of Bunpou v0.1.
-!
-! Bunpou is free software: you can redistribute it and/or modify
-! it under the terms of the GNU General Public License as published by
-! the Free Software Foundation, either version 3 of the License, or
-! (at your option) any later version.
-!
-! Bunpou is distributed in the hope that it will be useful,
-! but WITHOUT ANY WARRANTY; without even the implied warranty of
-! MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-! GNU General Public License for more details.
-!
-! You should have received a copy of the GNU General Public License
-! along with Bunpou.  If not, see <http://www.gnu.org/licenses/>.
-
 LEXICON						allAdjectives
 adj-na%&:0							naAdj;
 adj-i%&:0							iAdj;
@@ -13334,10 +13317,10 @@ i:0						realIAdjEndings ;
 
 LEXICON			realIAdjEndings
 						naiEndings2 ;
-+NEG:+ku				negativeIEndings ;
++ADV:+ku				negativeIEndings ;
 
 LEXICON			naiEndings
-+DE:+i%!de				# ;
++NPAST+DE:+i%!de				# ;
 						presPastNegAdj ;
 						naiEndings2 ;
 
@@ -13357,10 +13340,10 @@ LEXICON			adverbEndings
 +TE:%!te				# ;
 
 LEXICON			negativeIEndings
-+POLITE:%!arimasen		# ;
-+POLITE+PAST:%!arimasendeshita	# ;
-+PLAIN:%!na			presPastNegAdj ;
-+PLAIN:%!ha%!na		presPastNegAdj ;
++NEG=POLITE:%!arimasen		# ;
++NEG=POLITE=PAST:%!arimasendeshita	# ;
++NEG=PLAIN:%!na			presPastNegAdj ;
++NEG=PLAIN:%!ha%!na		presPastNegAdj ;
 
 LEXICON			positiveEndings
 						presPastAdj;

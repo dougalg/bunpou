@@ -1,5 +1,5 @@
 Bunpou Morphological Segmenter for Japan
-v0.1.1
+v0.2.0
 
 WARNING: This is not a stable version and is not currently intended for production use.
 
@@ -25,7 +25,16 @@ The romaji output by the converter, and to be input into the converter and the f
 
 You should be able to input pure romaji, or kanji and romaji into the full.fst and receive equal results, although words containing more than one kanji character must have all their kanji characters included
 
+To Do:
+- Predictive
+- Suggest corrections to mis-spellings
+- Wider range of converter options
+
 UPDATES:
+
+2011/11/19
+- Added "=" symbol to connect semantic markers for portmanteau morphemes
+- Added full_unclean.fst which is same as full.fst but without the cleanup rules so that one can pass in a root + set of semantic suffix tags to get back a *segmented* word, rather than the unsegmented form that full.fst would provide
 
 2010/02/26
 - Added korareru and conjugations to irregular verb lexicon
