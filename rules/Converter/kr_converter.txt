@@ -1,0 +1,232 @@
+# Convert all hiragana to romaji
+define rule [ っ t -> t t ];
+push rule
+define rule [ っ d -> d d ];
+push rule
+define rule [ っ k -> k k ];
+push rule
+define rule [ っ g -> g g ];
+push rule
+define rule [ っ y -> y y ];
+push rule
+define rule [ っ n -> n n ];
+push rule
+define rule [ っ h -> h h ];
+push rule
+define rule [ っ p -> p p ];
+push rule
+define rule [ っ b -> b b ];
+push rule
+define rule [ っ r -> r r ];
+push rule
+define rule [ っ s -> s s ];
+push rule
+define rule [ っ z -> z z ];
+push rule
+define rule [ っ m -> m m ];
+push rule
+define rule [ っ w -> w w ];
+push rule
+define rule [ し ゃ -> s y a ];
+push rule
+define rule [ し ゅ -> s y u ];
+push rule
+define rule [ し ょ -> s y o ];
+push rule
+define rule [ じ ゃ -> z y a ];
+push rule
+define rule [ じ ゅ -> z y u ];
+push rule
+define rule [ じ ょ -> z y o ];
+push rule
+define rule [ ち ゃ -> t y a ];
+push rule
+define rule [ ち ゅ -> t y u ];
+push rule
+define rule [ ち ょ -> t y o ];
+push rule
+define rule [ に ゃ -> n y a ];
+push rule
+define rule [ に ゅ -> n y u ];
+push rule
+define rule [ に ょ -> n y o ];
+push rule
+define rule [ ひ ゃ -> h y a ];             
+push rule                                                                                                                        
+define rule [ ひ ゅ -> h y u ];
+push rule
+define rule [ ひ ょ -> h y o ];
+push rule
+define rule [ び ゃ -> b y a ];
+push rule
+define rule [ び ゅ -> b y u ];
+push rule
+define rule [ び ょ -> b y o ];
+push rule
+define rule [ ぴ ゃ -> p y a ];
+push rule
+define rule [ ぴ ゅ -> p y u ];
+push rule
+define rule [ ぴ ょ -> p y o ];
+push rule
+define rule [ み ゃ -> m y a ];
+push rule
+define rule [ み ゅ -> m y u ];
+push rule
+define rule [ み ょ -> m y o ];
+push rule
+define rule [ り ゃ -> r y a ];
+push rule
+define rule [ り ゅ -> r y u ];
+push rule
+define rule [ り ょ -> r y o ];
+push rule
+define rule [ き ゃ -> k y a ];
+push rule
+define rule [ き ゅ -> k y u ];
+push rule
+define rule [ き ょ -> k y o ];
+push rule
+define rule [ ぎ ゃ -> g y a ];
+push rule
+define rule [ ぎ ゅ -> g y u ];
+push rule
+define rule [ ぎ ょ -> g y o ];
+push rule
+define rule [ か -> k a ];
+push rule
+define rule [ が -> g a ];
+push rule
+define rule [ き -> k i ];
+push rule
+define rule [ ぎ -> g i ];
+push rule
+define rule [ く -> k u ];
+push rule
+define rule [ ぐ -> g u ];
+push rule
+define rule [ け -> k e ];
+push rule
+define rule [ げ -> g e ];
+push rule
+define rule [ こ -> k o ];
+push rule
+define rule [ ご -> g o ];
+push rule
+define rule [ さ -> s a ];
+push rule
+define rule [ ざ -> z a ];
+push rule
+define rule [ し -> s i ];
+push rule
+define rule [ じ -> z i ];
+push rule
+define rule [ す -> s u ];
+push rule
+define rule [ ず -> z u ];
+push rule
+define rule [ せ -> s e ];
+push rule
+define rule [ ぜ -> z e ];
+push rule
+define rule [ そ -> s o ];
+push rule
+define rule [ ぞ -> z o ];
+push rule
+define rule [ た -> t a ];
+push rule
+define rule [ だ -> d a ];
+push rule
+define rule [ ち -> t i ];
+push rule
+define rule [ つ -> t u ];
+push rule
+define rule [ て -> t e ];
+push rule
+define rule [ で -> d e ];
+push rule
+define rule [ と -> t o ];
+push rule
+define rule [ ど -> d o ];
+push rule
+define rule [ な -> n a ];
+push rule
+define rule [ に -> n i ];
+push rule
+define rule [ ぬ -> n u ];
+push rule
+define rule [ ね -> n e ];
+push rule
+define rule [ の -> n o ];
+push rule
+define rule [ は -> h a ];
+push rule
+define rule [ ば -> b a ];
+push rule
+define rule [ ぱ -> p a ];
+push rule
+define rule [ ひ -> h i ];
+push rule
+define rule [ び -> b i ];
+push rule
+define rule [ ぴ -> p i ];
+push rule
+define rule [ ふ -> h u ];
+push rule
+define rule [ ぶ -> b u ];
+push rule
+define rule [ ぷ -> p u ];
+push rule
+define rule [ へ -> h e ];
+push rule
+define rule [ べ -> b e ];
+push rule
+define rule [ ぺ -> p e ];
+push rule
+define rule [ ほ -> h o ];
+push rule
+define rule [ ぼ -> b o ];
+push rule
+define rule [ ぽ -> p o ];
+push rule
+define rule [ ま -> m a ];
+push rule
+define rule [ み -> m i ];
+push rule
+define rule [ む -> m u ];
+push rule
+define rule [ め -> m e ];
+push rule
+define rule [ も -> m o ];
+push rule
+define rule [ や -> y a ];
+push rule
+define rule [ ゆ -> y u ];
+push rule
+define rule [ よ -> y o ];
+push rule
+define rule [ ら -> r a ];
+push rule
+define rule [ り -> r i ];
+push rule
+define rule [ る -> r u ];
+push rule
+define rule [ れ -> r e ];
+push rule
+define rule [ ろ -> r o ];
+push rule
+define rule [ わ -> w a ];
+push rule
+define rule [ ん -> n ];
+push rule
+define rule [ あ -> a ];
+push rule
+define rule [ い -> i ];
+push rule
+define rule [ う -> u ];
+push rule
+define rule [ え ->  e ];
+push rule
+define rule [ お -> o ];
+push rule
+compose net
