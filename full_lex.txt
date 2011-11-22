@@ -13327,7 +13327,7 @@ LEXICON			realIAdjEndings
 +ADV:+ku				negativeIEndings ;
 
 LEXICON			naiEndings
-+NPAST+DE:+i%!de				# ;
++NPAST+DE:+i+%!de				# ;
 						presPastNegAdj ;
 						naiEndings2 ;
 
@@ -13344,13 +13344,13 @@ LEXICON			naiEndings2
 LEXICON			adverbEndings
 						# ;
 +NARU:+nar				realVerbGoDanEndings ;
-+TE:%!te				# ;
++TE:+%!te				# ;
 
 LEXICON			negativeIEndings
-+NEG=POLITE:%!arimasen		# ;
-+NEG=POLITE=PAST:%!arimasendeshita	# ;
-+NEG=PLAIN:%!na			presPastNegAdj ;
-+NEG=PLAIN:%!ha%!na		presPastNegAdj ;
++NEG=POLITE:+%!arimasen		# ;
++NEG=POLITE=PAST:+%!arimasendeshita	# ;
++NEG=PLAIN:+%!na			presPastNegAdj ;
++NEG=PLAIN:+%!ha%!na		presPastNegAdj ;
 
 LEXICON			positiveEndings
 						presPastAdj;
@@ -52982,17 +52982,17 @@ LEXICON				realVerbGoDanEndings
 
 LEXICON				verbContEndings
 							masu ;
-+TAI:%!ta					realIAdjEndings ;	! tai conjugates as an i adjective
++TAI:+%!ta					realIAdjEndings ;	! tai conjugates as an i adjective
 +PAST:+ta					pastEndings ;
 +TE:+te						teEndings ;
-+CHAU:%!tya				realVerbGoDanEndings ;
-+NOWAY:%!ha%!sina			naiEndings ; ! From here are special endings...
-+IMP=POLITE:%!nasai		# ;
-+IMP=POLITE=NEG:%!nasaruna	# ;
-+EASY:%!易					realIAdjEndings ;
-+EASY:%!yasu				realIAdjEndings ;
-+HARD:%!難					realIAdjEndings ;
-+HARD:%!niku					realIAdjEndings ;
++CHAU:+%!tya				realVerbGoDanEndings ;
++NOWAY:+%!ha%!sina			naiEndings ; ! From here are special endings...
++IMP=POLITE:+%!nasai		# ;
++IMP=POLITE=NEG:+%!nasaruna	# ;
++EASY:+%!易					realIAdjEndings ;
++EASY:+%!yasu				realIAdjEndings ;
++HARD:+%!難					realIAdjEndings ;
++HARD:+%!niku					realIAdjEndings ;
 +SUGIRU:+sugi				realVerbIchiDanEndings ;
 +SUGIRU:+過gi				realVerbIchiDanEndings ;
 
@@ -53003,17 +53003,17 @@ LEXICON				masEndings
 0:+u							# ;
 +PAST:+i+ta					pastEndings ;
 +NEG:+en					# ;
-+NEG+PAST:+en%!desita		# ;
++NEG+PAST:+en+%!desita		# ;
 +HYP:+e							verbHypEndings ;
 +SURE:+sure						verbHypEndings ;
 +VOL:+you					# ;
 
 LEXICON				verbImpfEndings
 +ZU:+zu						# ; ! Translates to "without"
-+NEG:%!na					naiEndings ;	! nai conjugates as an i adjective.
-+MUST:%!nakereba%!narimasen	# ;
-+MUST:%!nakya				# ;
-+MUST:%!nakutya			# ;
++NEG:+%!na					naiEndings ;	! nai conjugates as an i adjective.
++MUST:+%!nakereba%!narimasen	# ;
++MUST:+%!nakya				# ;
++MUST:+%!nakutya			# ;
 +VOL:+u						# ;
 
 ! Here we allow passive to follow causative, but not passive+passive
@@ -53040,13 +53040,13 @@ LEXICON			pastEndings
 +ALT:+ri				# ;
 
 LEXICON			teEndings
-+IRU:%!i				realVerbIchiDanEndings ;
-+IRU:%!					realVerbIchiDanEndings ;
-+IRU:%!居				realVerbIchiDanEndings ;
-+SHIMAU:%!仕舞		realVerbGoDanEndings ;
-+SHIMAU:%!終			realVerbGoDanEndings ;
-+SHIMAU:%!了			realVerbGoDanEndings ;
-+SHIMAU:%!sima		realVerbGoDanEndings ;
-+TRY:%!mi				realVerbIchiDanEndings ;
-+TRY:%!見				realVerbIchiDanEndings ;
++IRU:+%!i				realVerbIchiDanEndings ;
++IRU:+%!					realVerbIchiDanEndings ;
++IRU:+%!居				realVerbIchiDanEndings ;
++SHIMAU:+%!仕舞		realVerbGoDanEndings ;
++SHIMAU:+%!終			realVerbGoDanEndings ;
++SHIMAU:+%!了			realVerbGoDanEndings ;
++SHIMAU:+%!sima		realVerbGoDanEndings ;
++TRY:+%!mi				realVerbIchiDanEndings ;
++TRY:+%!見				realVerbIchiDanEndings ;
 						# ;

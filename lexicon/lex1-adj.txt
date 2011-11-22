@@ -13320,7 +13320,7 @@ LEXICON			realIAdjEndings
 +ADV:+ku				negativeIEndings ;
 
 LEXICON			naiEndings
-+NPAST+DE:+i%!de				# ;
++NPAST+DE:+i+%!de				# ;
 						presPastNegAdj ;
 						naiEndings2 ;
 
@@ -13337,13 +13337,13 @@ LEXICON			naiEndings2
 LEXICON			adverbEndings
 						# ;
 +NARU:+nar				realVerbGoDanEndings ;
-+TE:%!te				# ;
++TE:+%!te				# ;
 
 LEXICON			negativeIEndings
-+NEG=POLITE:%!arimasen		# ;
-+NEG=POLITE=PAST:%!arimasendeshita	# ;
-+NEG=PLAIN:%!na			presPastNegAdj ;
-+NEG=PLAIN:%!ha%!na		presPastNegAdj ;
++NEG=POLITE:+%!arimasen		# ;
++NEG=POLITE=PAST:+%!arimasendeshita	# ;
++NEG=PLAIN:+%!na			presPastNegAdj ;
++NEG=PLAIN:+%!ha%!na		presPastNegAdj ;
 
 LEXICON			positiveEndings
 						presPastAdj;
