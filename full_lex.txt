@@ -13359,6 +13359,7 @@ LEXICON			positiveEndings
 LEXICON			presPastNegAdj
 +COND:+kereba			# ;
 +NPAST:+i				# ;
++SA+SOU:+sa+sou     #;
 						presPastAdj ;
 							
 LEXICON			presPastAdj
